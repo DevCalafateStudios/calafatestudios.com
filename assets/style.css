@@ -1,0 +1,45 @@
+:root{
+    --indigo:#372E5E; --indigo-deep:#2E2545; --night:#291F3E;
+    --paper:#FBF7EE; --cream:#F2E7CE; --ink:#2B2440;
+    --berry:#7A5FC0; --berry-deep:#5A4499; --lavender:#A79ADD; --leaf:#8CA07A;
+    --line:#E9E1CF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:var(--berry-deep)}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+.hero{position:relative;background:var(--indigo);color:var(--cream);overflow:hidden;text-align:center;padding:88px 24px 0}
+.stars{position:absolute;inset:0;pointer-events:none}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--cream);opacity:.5;animation:tw 3.2s ease-in-out infinite}
+.star.s2{width:2px;height:2px;animation-duration:4.1s}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.85}}
+.alpaca{width:200px;height:auto;margin:0 auto;display:block;position:relative}
+h1.logo{font-weight:800;font-size:clamp(42px,7vw,64px);letter-spacing:.06em;margin-top:14px}
+.logo-sub{color:var(--lavender);font-weight:600;font-size:clamp(19px,3vw,25px);letter-spacing:.16em;margin-top:-4px}
+.tagline{max-width:540px;margin:22px auto 30px;color:rgba(242,231,206,.85);font-size:18px}
+.btn{display:inline-block;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;padding:13px 28px;border-radius:999px;position:relative}
+.btn:hover{background:var(--berry-deep)}
+.ridges{display:block;width:100%;margin-top:60px}
+
+section{padding:72px 0 40px}
+h2{font-size:28px;font-weight:800;color:var(--indigo);margin-bottom:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.berries{color:var(--berry);letter-spacing:.35em;font-size:14px;margin-bottom:10px}
+
+.top{background:var(--indigo);padding:14px 0}
+.top .wrap{display:flex;align-items:center;gap:12px}
+.top a{color:var(--cream);text-decoration:none;font-weight:800;letter-spacing:.09em}
+.top .sub{color:var(--lavender);font-weight:600;letter-spacing:.14em;font-size:13px}
+
+.prose{padding-bottom:40px}
+.prose h1{font-size:34px;font-weight:800;color:var(--indigo);margin:46px 0 6px}
+.prose .date{color:#6b6480;margin-bottom:26px}
+.prose h2{font-size:21px;margin:28px 0 8px}
+.prose p,.prose li{margin-bottom:12px}
+.prose ul{padding-left:22px}
+.contact-btn{margin:10px 0 4px}
+
+footer{border-top:1px solid var(--line);padding:26px 0;color:#6b6480;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:inherit}
